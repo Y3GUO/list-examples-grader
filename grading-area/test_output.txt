@@ -1,0 +1,46 @@
+JUnit version 4.13.2
+.E.E.E.E
+Time: 1.638
+There were 4 failures:
+1) testMerge(TestListExamples)
+org.junit.runners.model.TestTimedOutException: test timed out after 500 milliseconds
+	at java.base@17.0.4.1/java.util.Arrays.copyOf(Arrays.java:3512)
+	at java.base@17.0.4.1/java.util.Arrays.copyOf(Arrays.java:3481)
+	at java.base@17.0.4.1/java.util.ArrayList.grow(ArrayList.java:237)
+	at java.base@17.0.4.1/java.util.ArrayList.grow(ArrayList.java:244)
+	at java.base@17.0.4.1/java.util.ArrayList.add(ArrayList.java:454)
+	at java.base@17.0.4.1/java.util.ArrayList.add(ArrayList.java:467)
+	at app//ListExamples.merge(ListExamples.java:42)
+	at app//TestListExamples.testMerge(TestListExamples.java:35)
+2) testMergeRightEnd(TestListExamples)
+org.junit.runners.model.TestTimedOutException: test timed out after 500 milliseconds
+	at java.base@17.0.4.1/java.lang.System.arraycopy(Native Method)
+	at java.base@17.0.4.1/java.util.Arrays.copyOf(Arrays.java:3514)
+	at java.base@17.0.4.1/java.util.Arrays.copyOf(Arrays.java:3481)
+	at java.base@17.0.4.1/java.util.ArrayList.grow(ArrayList.java:237)
+	at java.base@17.0.4.1/java.util.ArrayList.grow(ArrayList.java:244)
+	at java.base@17.0.4.1/java.util.ArrayList.add(ArrayList.java:454)
+	at java.base@17.0.4.1/java.util.ArrayList.add(ArrayList.java:467)
+	at app//ListExamples.merge(ListExamples.java:42)
+	at app//TestListExamples.testMergeRightEnd(TestListExamples.java:26)
+3) testFilter(TestListExamples)
+java.lang.AssertionError: expected:<[apple, banana, date]> but was:<[date, banana, apple]>
+	at org.junit.Assert.fail(Assert.java:89)
+	at org.junit.Assert.failNotEquals(Assert.java:835)
+	at org.junit.Assert.assertEquals(Assert.java:120)
+	at org.junit.Assert.assertEquals(Assert.java:146)
+	at TestListExamples.testFilter(TestListExamples.java:51)
+4) testMerge1(TestListExamples)
+org.junit.runners.model.TestTimedOutException: test timed out after 500 milliseconds
+	at java.base@17.0.4.1/java.util.Arrays.copyOf(Arrays.java:3512)
+	at java.base@17.0.4.1/java.util.Arrays.copyOf(Arrays.java:3481)
+	at java.base@17.0.4.1/java.util.ArrayList.grow(ArrayList.java:237)
+	at java.base@17.0.4.1/java.util.ArrayList.grow(ArrayList.java:244)
+	at java.base@17.0.4.1/java.util.ArrayList.add(ArrayList.java:454)
+	at java.base@17.0.4.1/java.util.ArrayList.add(ArrayList.java:467)
+	at app//ListExamples.merge(ListExamples.java:42)
+	at app//TestListExamples.testMerge1(TestListExamples.java:71)
+
+FAILURES!!!
+Tests run: 4,  Failures: 4
+
